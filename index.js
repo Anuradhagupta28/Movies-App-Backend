@@ -36,7 +36,7 @@ async function connectDatabase() {
 
 
     try{
-      await mongoose.connect('mongodb+srv://annugupta8512:annu%408512@clusteranu.2ad3iyv.mongodb.net/moviesData')
+      await mongoose.connect(`${process.env.MangoDB}')
     
       console.log('Connected to DB')
     
